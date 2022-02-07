@@ -2,9 +2,9 @@
 
 /**
  * main - Entry point
- * filedes - Unsure
- * *buf - Unsure
- * nbyte - Unsure
+ * filedes - Descriptor
+ * *buf - Descriptor
+ * nbyte - Descriptor
  * Return: Always 0 (Success)
  */
 int write(int filedes, const char *buf, unsigned int nbyte);
