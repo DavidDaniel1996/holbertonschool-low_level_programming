@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * print_diagonal - prints diagonal lines
+ * @n: variable determining amount of lines
+ *
+ * Return: void
+ */
+
 void print_diagonal(int n)
 {
 	int x = 0;
@@ -8,12 +15,19 @@ void print_diagonal(int n)
 	while (x < n)
 	{
 		_putchar('\\');
-		_putchar('\n');
 		x++;
-		while (y < x)
+		if (x == n)
 		{
-			_putchar(' ');
-			y++;
+			_putchar('\n');
+		}
+		else
+		{
+			_putchar('\n');
+			while (y < x)
+			{
+				_putchar(' ');
+				y++;
+			}
 		}
 		y = 0;
 	}
