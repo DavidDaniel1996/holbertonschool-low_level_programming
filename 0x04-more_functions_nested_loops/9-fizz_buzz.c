@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - prints from 1 to 100, checking for multiples of 3 and 5
