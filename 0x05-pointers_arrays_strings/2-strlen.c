@@ -3,7 +3,7 @@
 /**
  * int_strlen - counts the amount of characters in a string
  * @s: pointer, points to the value of a variable
- * 
+ *
  * Return: returns the amount of characters in string
  */
 
