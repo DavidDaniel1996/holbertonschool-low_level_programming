@@ -11,7 +11,11 @@ int main(void)
 {
 	char *str;
 
+<<<<<<< HEAD
 	str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+=======
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+>>>>>>> 216fd75fa6ea9f02df8b46d6cb37117a88e1968b
 	print_rev(str);
 	return (0);
 }
