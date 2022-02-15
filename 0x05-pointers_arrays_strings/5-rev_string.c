@@ -11,10 +11,15 @@ void rev_string(char *s)
 	{
 		count++;
 	}
+
+	s[count] = s[count - 1];
+
 	while (rev < count)
 	{
 		store = s[rev];
 		s[rev] = s[count];
 		s[count] = store;
+		count--;
+		rev++;
 	}
 }
