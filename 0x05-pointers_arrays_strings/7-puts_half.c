@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts_half - prints the latter half of a string
+ * puts_half - prints the latter half of a string.
  * @str: pointer, points to the string in main function
  *
  * Return: Void
