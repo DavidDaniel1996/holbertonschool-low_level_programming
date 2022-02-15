@@ -1,25 +1,20 @@
 #include "main.h"
+#include <stdio.h>
 
 void rev_string(char *s)
 {
-	int charCount = 0;
-	/*int revCount = 0;*/
-	char temp[1000];
+	int count = 0;
+	int rev = 0;
+	char store;
 
-	while (s[charCount] != '\0')
+	while (s[count] != '\0')
 	{
-		charCount++;
+		count++;
 	}
-	while (s[charCount])
+	while (rev < count)
 	{
-		temp[1000] = s[charCount];
-		charCount--;
-		
-		/*if (temp[revCount] != '\0')
-		{
-			revCount++;
-		}*/
+		store = s[rev];
+		s[rev] = s[count];
+		s[count] = store;
 	}
-
-	*s = temp[1000];
-}	
+}
