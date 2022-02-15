@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * rev_string - reverses string
+ * @s: pointer, points to string
+ *
+ * Return: void
+ */
+
 void rev_string(char *s)
 {
 	int count = 0;
@@ -12,7 +19,7 @@ void rev_string(char *s)
 		count++;
 	}
 
-	s[count] = s[count - 1];
+	count--;
 
 	while (rev < count)
 	{
