@@ -18,7 +18,7 @@ char *_strcpy(char *dest, char *src)
 		length++;
 	}
 
-	length--;
+	/*length--;*/
 
 	for (count = 0; count < length && src[count] != '\0'; count++)
 	{
