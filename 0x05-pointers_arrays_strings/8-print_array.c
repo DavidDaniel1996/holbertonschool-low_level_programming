@@ -3,7 +3,7 @@
 
 void print_array(int *a, int n)
 {
-	int l = 5;
+	int l = 0;
 	n = 0;
 
 	while (a[l] != '\0')
