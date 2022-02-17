@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+* _strcat - appends one string to the end of another
+* @dest: string being modified
+* @src: string being appended to modified string
+*
+* Return: modified string
+*/
+
 char *_strcat(char *dest, char *src)
 {
 	int count = 0;
