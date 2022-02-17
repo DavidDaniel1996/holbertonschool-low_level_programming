@@ -19,6 +19,10 @@ char *cap_string(char *a)
 			{
 				a[c] = a[c] - 32;
 			}
+			else if (a[c - 1] == 123 || a[c - 1] == 125)
+			{
+				a[c] = a[c] - 32;
+			}
 		}
 	}
 	return (a);
