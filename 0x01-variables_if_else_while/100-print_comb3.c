@@ -8,15 +8,18 @@ int main(void)
 	{
 		for (y = '0'; y <= '9'; y++)
 		{
-			if (!(x == '0' && y == '0'))
+			if (!(x == y))
 			{
-				putchar (x);
-				putchar (y);
-
-				if (!(x == '8' && y == '9'))
+				if (!(x == '0' && y == '0'))
 				{
-					putchar (',');
-					putchar (' ');
+					putchar (x);
+					putchar (y);
+
+					if (!(x == '8' && y == '9'))
+					{
+						putchar (',');
+						putchar (' ');
+					}
 				}
 			}
 		}
