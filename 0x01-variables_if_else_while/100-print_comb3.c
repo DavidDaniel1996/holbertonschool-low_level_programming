@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+* main - prints possible two digit combinations
+*
+* Return: returns 0
+*/
+
 int main(void)
 {
 	int x, y;
