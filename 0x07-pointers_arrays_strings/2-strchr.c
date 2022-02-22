@@ -1,13 +1,23 @@
 #include "main.h"
 
+/**
+ * *_strchr - locates a character in string, and prints string from position
+ * @s: pointer, points to array
+ * @c: letter being located
+ *
+ * Return: Return string value, and return null byte
+ */
+
 char *_strchr(char *s, char c)
 {
-	unsigned char count;
+	int count;
 
-	for (count = 'a' ; s[count] <= c ;  count ++)
+	for (count = 0 ; s[count] <= c ; count++)
 	{
-		;
+		if (s[count] == c)
+		{
+			return (s + count);
+		}
 	}
-	*s = s[count};
-	return(s);
+	return ('\0');
 }
