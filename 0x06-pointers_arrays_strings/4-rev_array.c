@@ -15,11 +15,6 @@ void reverse_array(int *a, int n)
 	int store;
 	int rev = n - 1;
 
-	/*while (a[n] != '\0')
-	{
-		n++;
-	}*/
-
 	while (count < rev)
 	{
 		store = a[count];
