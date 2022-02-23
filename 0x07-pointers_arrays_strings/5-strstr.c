@@ -11,16 +11,20 @@ char *_strstr(char *haystack, char *needle)
 
 		if (haystack[count] == needle[index])
 		{
-			while ((needle[index] == haystack[count + index]) && needle[index] >= '\0')
+			while ((needle[index] == haystack[count + index]) && needle[index] != '\0')
 			{
 				index++;
 			}
 
 			if (needle[index] == '\0')
 			{
-				break;
+				return (haystack + count);
 			}
 		}
+		else if (haystack[count] == '\0')
+		{
+			return ('\0');
+		}
 	}
-	return (haystack + count);
+	return (0);
 }
