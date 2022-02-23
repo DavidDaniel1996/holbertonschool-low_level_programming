@@ -5,7 +5,7 @@ char *_strstr(char *haystack, char *needle)
 	int count;
 	int index;
 
-	for (count = 0; haystack[count] >= '\0' ; count++)
+	for (count = 0; haystack[count] != '\0' ; count++)
 	{
 		index = 0;
 
