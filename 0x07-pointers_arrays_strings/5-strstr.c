@@ -7,25 +7,20 @@ char *_strstr(char *haystack, char *needle)
 
 	for (count = 0; haystack[count] != '\0' ; count++)
 	{
-		for (index = 0; needle[index] != '\0'; index++)
+		index = 0;
+
+		if (haystack[count] == needle[index])
 		{
-			if (haystack[count] == needle[index])
+			while ((needle[index] == haystack[count + index]) && needle[index] != '\0')
 			{
-				for (index = index; haystack[index + count] == needle[index]; index++)
-				{
-					;
-				}
-				return (haystack + ((count + index) + 2));
+				index++;
 			}
-			/*else 
+
+			if (needle[index] == '\0')
 			{
-				break;
+				return (haystack + count);
 			}
-	*/	}
-		/*if (s[count] == accept[index])
-		{
-			break;
-		}*/
+		}
 	}
 	return ('\0');
 }
