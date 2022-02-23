@@ -5,13 +5,13 @@ char *_strstr(char *haystack, char *needle)
 	int count;
 	int index;
 
-	for (count = 0; haystack[count] != '\0' ; count++)
+	for (count = 0; haystack[count] >= '\0' ; count++)
 	{
 		index = 0;
 
 		if (haystack[count] == needle[index])
 		{
-			while ((needle[index] == haystack[count + index]) && needle[index] != '\0')
+			while ((needle[index] == haystack[count + index]) && needle[index] >= '\0')
 			{
 				index++;
 			}
