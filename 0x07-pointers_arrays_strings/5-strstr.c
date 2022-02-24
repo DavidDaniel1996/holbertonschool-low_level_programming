@@ -32,7 +32,7 @@ char *_strstr(char *haystack, char *needle)
 		else if (haystack[count] == '\0')
 		{
 			return ('\0');
-		}	
+		}
 	}
 
 	if (haystack[count] == '\0')
