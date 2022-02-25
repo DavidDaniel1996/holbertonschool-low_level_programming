@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -15,7 +16,7 @@ int main(int argc, char __attribute__ ((unused)) *argv[])
 
 	if (argc > 1)
 	{
-		mult = argc * (argc - 1);
+		mult = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", mult);
 	}
 	else if (argc <= 1)
