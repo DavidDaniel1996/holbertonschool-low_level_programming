@@ -14,12 +14,12 @@ int main(int argc, char __attribute__ ((unused)) *argv[])
 {
 	int mult;
 
-	if (argc > 1)
+	if (argc > 2)
 	{
 		mult = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", mult);
 	}
-	else if (argc <= 1)
+	else if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
