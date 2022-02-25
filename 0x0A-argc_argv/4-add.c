@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "main.h"
+#include <string.h>
 
 /**
  * main - adds all integers
@@ -13,26 +13,29 @@
 
 int main(int argc, char *argv[])
 {
-	int sum = 0;
+	unsigned int sum = 0;
+	unsigned int idx;
 	int count;
+	char *store;
 
 	if (argc > 1)
 	{
 		for (count = 1; count < argc; count++)
 		{
-			if (atoi(argv[count]) == 0 && argv[count] == 0)
+			store = argv[count];
+			for (idx = 0; idx < strlen(store); idx++)
 			{
-				printf("Error\n");
-				return (1);
-			}
-			else
-			{
-				sum += (atoi(argv[count]));
-				if (count == argc - 1)
+				if (store[idx] < 48 || store[idx] > 57)
 				{
-					printf("%d\n", sum);
-					break;
+					printf("Error\n");
+					return (1);
 				}
+			}
+			sum += (atoi(argv[count]));
+			if (count == argc - 1)
+			{
+				printf("%d\n", sum);
+				break;
 			}
 		}
 	}
