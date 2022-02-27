@@ -14,7 +14,7 @@
 int main(int argc, char *argv[])
 {
 	unsigned int sum = 0;
-	unsigned int idx;
+	unsigned idx;
 	int count;
 	char *store;
 
