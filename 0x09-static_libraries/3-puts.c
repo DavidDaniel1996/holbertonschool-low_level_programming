@@ -1,7 +1,18 @@
-#include <stdio.h>
 #include "main.h"
 
-void _puts(char *s)
+/**
+ * _puts - prints a string, followed by a new line
+ * @str: pointer, points to string
+ *
+ * Return: Void
+ */
+
+void _puts(char *str)
 {
-	_putchar;
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
 }
