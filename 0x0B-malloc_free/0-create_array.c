@@ -24,6 +24,10 @@ char *create_array(unsigned int size, char c)
 	{
 		for (count = 0; count < size; count++)
 		{
+			if (ptr == NULL)
+			{
+				return ('\0');
+			}
 			ptr[count] = c;
 		}
 		return (ptr);
