@@ -13,8 +13,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int fullSize, size1, size2;
-	int count, idx;
+	int fullSize, size1, size2, idx, count;
 	char *ptr;
 
 	if (s1 == NULL && s2 != NULL)
@@ -30,14 +29,11 @@ char *str_concat(char *s1, char *s2)
 		s1 = "";
 		s2 = "";
 	}
-
 	printf("1");
 	size1 = strlen(s1);
 	size2 = strlen(s2);
 	fullSize = size1 + size2;
-
 	ptr = (char *)malloc(fullSize * (sizeof(char) + 1));
-
 	for (count = 0; count <= size1; count++)
 	{
 		if (ptr == NULL)
@@ -47,7 +43,6 @@ char *str_concat(char *s1, char *s2)
 		ptr[count] = s1[count];
 		idx = count;
 	}
-
 	for (count = 0; count < size2; count++)
 	{
 		if (ptr == NULL)
