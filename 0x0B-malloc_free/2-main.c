@@ -11,12 +11,12 @@ int main(void)
 {
     char *s;
 
-    s = str_concat(NULL, "Hello");
+    s = str_concat("Hello , World");
 	printf("%s\n", s);
-    s = str_concat("Hello", NULL);
+    /*s = str_concat("Hello", NULL);
 	printf("%s\n", s);
     s = str_concat(NULL, NULL);
-	printf("%s\n", s);
+	printf("%s\n", s);*/
 
     if (s == NULL)
     {

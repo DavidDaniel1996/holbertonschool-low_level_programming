@@ -29,7 +29,6 @@ char *str_concat(char *s1, char *s2)
 		s1 = "";
 		s2 = "";
 	}
-	printf("1");
 	size1 = strlen(s1);
 	size2 = strlen(s2);
 	fullSize = size1 + size2;
