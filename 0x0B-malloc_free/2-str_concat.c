@@ -4,10 +4,11 @@
 #include "main.h"
 
 /**
-* _strdup - returns pointer to allocated space, contains duplicate of string
-* @str: pointer, points to string in main function
+* str_concat - pointer to allocated space, contains combo of two strings
+* @s1: pointer, points to string 1 in main function
+* @s2: pointer, points to string 2 in main function
 *
-* Return: '\0' if str and ptr null, ptr otherwise
+* Return: '\0' if ptr null, ptr otherwise
 */
 
 char *str_concat(char *s1, char *s2)
@@ -16,18 +17,22 @@ char *str_concat(char *s1, char *s2)
 	int count, idx;
 	char *ptr;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return ('\0');
+		s1 = "";
+	}
+	else if (s2 == NULL)
+	{
+		s2 = "";
 	}
 
-	size1 = (strlen(s1) + 1);
+	size1 = strlen(s1);
 	size2 = strlen(s2);
 	fullSize = size1 + size2;
 
-	ptr = (char *)malloc((fullSize * sizeof(char)) + 1);
+	ptr = (char *)malloc(fullSize * sizeof(char));
 
-	for (count = 0; count < size1; count++)
+	for (count = 0; count <= size1; count++)
 	{
 		if (ptr == NULL)
 		{
