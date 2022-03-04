@@ -16,17 +16,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int size1, idx, count;
 	char *ptr;
 
-	if (s1 == NULL && s2 != NULL)
+	if (s1 == NULL)
 	{
 		s1 = "";
 	}
-	if (s2 == NULL && s1 != NULL)
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
 	size1 = strlen(s1);
-
 	ptr = (char *)malloc((size1 * n) * sizeof(char));
+
 	for (count = 0; count <= size1; count++)
 	{
 		if (ptr == NULL)
