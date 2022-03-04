@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr[count] = s1[count];
 		idx = count;
 	}
-	for (count = 0; count < n; count++)
+	for (count = 0; count <= n; count++)
 	{
 		if (ptr == NULL)
 		{
