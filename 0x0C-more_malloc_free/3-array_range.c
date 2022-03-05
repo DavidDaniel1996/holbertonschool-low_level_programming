@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
-* *array_range: creates an array of integers
+* *array_range - creates an array of integers
 * @min: minimum amount of elements in array
 * @max: maximum amount of elements in array
 *
@@ -15,20 +15,27 @@ int *array_range(int min, int max)
 {
 	int *ptr;
 	int count;
+	int size;
 
 	if (min > max)
 	{
 		return (NULL);
 	}
 
-	ptr = malloc(max * sizeof(int) + 1);
+	size = max - min;
 
+	if (size < 0 )
+	{
+		size = size * -1;
+	}
+
+	ptr = malloc(size * sizeof(int) + 1);
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
 
-	for (count = 0; count < max; count++)
+	for (count = 0; count < size; count++)
 	{
 		ptr[count] = min;
 		min++;
