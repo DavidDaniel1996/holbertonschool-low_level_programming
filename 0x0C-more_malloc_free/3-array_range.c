@@ -33,7 +33,7 @@ int *array_range(int min, int max)
 		size = size + 1;
 	}
 
-	ptr = malloc(size * sizeof(int) + 1);
+	ptr = malloc(size * sizeof(int) + 4);
 	if (ptr == NULL)
 	{
 		return (NULL);
