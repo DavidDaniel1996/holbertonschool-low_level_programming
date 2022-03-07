@@ -1,7 +1,13 @@
 #include <stdio.h>
 
+/**
+ * main - print file name
+ *
+ * Return: 0 equals success
+ */
+
 int main(void)
 {
 	printf("%s\n", __FILE__);
-	return(0);
+	return (0);
 }
