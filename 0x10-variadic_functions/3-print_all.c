@@ -42,7 +42,7 @@ void print_int(va_list ptr)
 
 void print_float(va_list ptr)
 {
-	float store;
+	double store;
 
 	store = va_arg(ptr, double);
 	printf("%f", store);
@@ -79,7 +79,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ptr;
 	unsigned int count;
-	unsigned int idx;
+	int idx;
 	char *sep;
 
 	type_t type[] = {
