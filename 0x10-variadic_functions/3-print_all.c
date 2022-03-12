@@ -93,7 +93,7 @@ void print_all(const char * const format, ...)
 
 	sep = "";
 	count = 0;
-	while (count < strlen(format))
+	while (format != NULL && *(format + count) != '\0')
 	{
 		idx = 0;
 		while (idx < 4)
