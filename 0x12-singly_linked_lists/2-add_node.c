@@ -6,7 +6,7 @@
  * @head: address of node
  * @str: name given to fill node
  *
- * Return - pointer to address of new node
+ * Return: pointer to address of new node
  */
 
 list_t *add_node(list_t **head, const char *str)
