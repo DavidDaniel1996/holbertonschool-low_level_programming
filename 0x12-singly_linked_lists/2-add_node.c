@@ -3,7 +3,7 @@
 
 /**
  * add_node - function that creates a new node with data given
- * @head: address of node 
+ * @head: address of node
  * @str: name given to fill node
  *
  * Return - pointer to address of new node
