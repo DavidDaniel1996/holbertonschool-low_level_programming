@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index = deletes nth node
+ * delete_nodeint_at_index - deletes nth node
  * @head: pointer to head node
  * @index: node to be deleted
  *
@@ -17,7 +17,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	if (*head == NULL)
 	{
-		return (-1);
+		return ('\0');
 	}
 	if (index == 0)
 	{
