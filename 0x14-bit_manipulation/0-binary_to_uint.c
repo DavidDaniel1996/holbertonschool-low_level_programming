@@ -34,7 +34,13 @@ unsigned int binary_to_uint(const char *b)
 		idx--;
 	}
 
-	value = value + ((b[idx] - '0') * weight);
-	return (value);
-
+	if (b[idx] != '0' && b[idx] != '1')
+	{
+		return (0);
+	}
+	else
+	{
+		value = value + ((b[idx] - '0') * weight);
+		return (value);
+	}
 }
