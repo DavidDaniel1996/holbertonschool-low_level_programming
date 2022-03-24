@@ -11,7 +11,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int value = 0, idx = 0, weight = 1;
 
-	if (*b == '\0' || b == NULL)
+	if (b == NULL || *b == '\0')
 	{
 		return (0);
 	}
