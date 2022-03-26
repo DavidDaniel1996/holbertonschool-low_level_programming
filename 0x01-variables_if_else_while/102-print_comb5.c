@@ -21,7 +21,7 @@ int main(void)
 					putchar(a + '0');
 					putchar(b + '0');
 					putchar(' ');
-					while (a == x && y <= b)
+					while (y <= b)
 					{
 						y++;
 					}
