@@ -16,7 +16,7 @@ char *_strstr(char *haystack, char *needle)
 
 	if (*needle == '\0')
 	{
-		return ("nil");
+		return (haystack);
 	}
 
 	for (count = 0; haystack[count] != '\0' ; count++)
@@ -42,7 +42,7 @@ char *_strstr(char *haystack, char *needle)
 
 	if (haystack[count] == '\0')
 	{
-		return (haystack);
+		return ("nil");
 	}
 	else
 	{
