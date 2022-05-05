@@ -5,28 +5,28 @@
  * @head: pointer to head node
  * @index: position of node to be retrieved
  *
- * Return: node at index, NULL if doesn't exist 
+ * Return: node at index, NULL if doesn't exist
  */
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-    dlistint_t *tmp;
-    unsigned int idx = 0;
+	dlistint_t *tmp;
+	unsigned int idx = 0;
 
-    while (idx < index && head != NULL)
-    {
-        tmp = head->next;
-        head = tmp;
-        idx++;
-    }
+	while (idx < index && head != NULL)
+	{
+		tmp = head->next;
+		head = tmp;
+		idx++;
+	}
 
-    if (head == NULL)
-    {
-        return (NULL);
-    }
+	if (head == NULL)
+	{
+		return (NULL);
+	}
 
-    else
-    {
-        return (head);
-    }
+	else
+	{
+		return (head);
+	}
 }
