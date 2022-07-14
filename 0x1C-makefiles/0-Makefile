@@ -1,3 +1,4 @@
 all: exec
 exec:
 	gcc main.c school.c -o school
+
