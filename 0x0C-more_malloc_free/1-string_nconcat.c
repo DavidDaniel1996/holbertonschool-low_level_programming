@@ -31,22 +31,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		size2 = strlen(s2);
 
 	ptr = (char *)malloc((size1 + size2) * sizeof(char) + 1);
+	if (ptr == NULL)
+	{
+		return ('\0');
+	}
 
 	for (count = 0; count <= size1; count++)
 	{
-		if (ptr == NULL)
-		{
-			return ('\0');
-		}
 		ptr[count] = s1[count];
 		idx = count;
 	}
-	for (count = 0; count < n; count++)
+	for (count = 0; count < size2; count++)
 	{
-		if (ptr == NULL)
-		{
-			return ('\0');
-		}
 		ptr[idx] = s2[count];
 		idx++;
 	}
